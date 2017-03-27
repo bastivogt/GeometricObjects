@@ -52,16 +52,17 @@ namespace GeometricObjects
         public Circle(int x, int y, int radius) : base(x, y)
         {
             this.Radius = radius;
+            Console.WriteLine("Circle(x, y, radius)");
         }
 
         public Circle(int x, int y) : this(x, y, 1)
         {
-
+            Console.WriteLine("Circle(x, y)");
         }
 
         public Circle() : this(0, 0, 1)
         {
-
+            Console.WriteLine("Circle()");
         }
 
 
