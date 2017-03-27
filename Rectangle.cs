@@ -26,6 +26,12 @@ namespace GeometricObjects
             return this.Width * this.Height;
         }
 
+        public override double GetSize() 
+        {
+            return 2 * (this.Width + this.Height);
+        }
+
+
 
 
         public override string ToString()

@@ -63,21 +63,19 @@ namespace GeometricObjects
         }
 
 
-        public void Size(int dRadius)
-        {
-            this.Radius += dRadius;
-        }
 
-        public void Resize(int radius)
-        {
-            this.Radius = radius;
-        }
 
 
 
         public override double GetArea()
         {
             return Math.Pow(this.Radius, 2) * Math.PI;
+        }
+
+
+        public override double GetSize()
+        {
+            return 2 * Math.PI * this.Radius;
         }
 
 

@@ -60,35 +60,47 @@ namespace GeometricObjects
         }
 
 
-        public bool isBigger(Shape shape)
+        public bool ISBigger(Shape shape)
         {
-            if(this.GetArea() > shape.GetArea())
+            if(shape is Shape)
             {
-                return true;
+                if(this.GetArea() > shape.GetArea())
+                {
+                    return true;
+                }
+            }
+            return false;
+
+        }
+
+
+        public static bool ISBigger(Shape x, Shape y)
+        {
+            if(x is Shape && y is Shape)
+            {
+                if(x.GetArea() > y.GetArea())
+                {
+                    return true;
+                }
             }
             return false;
         }
 
 
-        public virtual void Size(int dWidth, int dHeight)
-        {
-            this.Width += dWidth;
-            this.Height += dHeight;
-        }
 
-        public virtual void Resize(int width, int height)
-        {
-            this.Width = width;
-            this.Height = height;
-        }
 
 
         public abstract double GetArea ();
+
+        public abstract double GetSize();
 
         public override string ToString()
         {
             return "Shape [X: " + this.X + ", Y: " + this.Y + ", Width: " + this.Width + ", Height: " + this.Height + "]";
         }
+
+
+        
 
 
 

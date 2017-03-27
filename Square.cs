@@ -53,14 +53,9 @@ namespace GeometricObjects
         }
 
 
-        public void Size(int dWidth)
+        public override string ToString()
         {
-            this.Width += dWidth;
-        }
-
-        public void Resize(int width)
-        {
-            this.Width = width;
+            return "Square [X: " + this.X + ", Y: " + this.Y + ", Width: " + this.Width + ", Height: " + this.Height + "]";
         }
 
     }

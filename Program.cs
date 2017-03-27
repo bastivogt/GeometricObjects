@@ -16,13 +16,14 @@ namespace GeometricObjects
                 Console.WriteLine(o);
             }
 
-            objs[1].Size(33);
 
-            Console.WriteLine(objs[0].isBigger(objs[1]));
+
+            Console.WriteLine(objs[0].ISBigger(objs[1]));
+            Console.WriteLine(Shape.ISBigger(objs[0], objs[1]));
 
             Console.WriteLine(Shape.Count);
 
-            foreach(Rectangle o in objs)
+            foreach(Square o in objs)
             {
                 Console.WriteLine(o);
             }
