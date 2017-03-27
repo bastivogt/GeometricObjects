@@ -46,7 +46,7 @@ namespace GeometricObjects
             this.Width = width;
             this.Height = height;
             _count ++;
-            Console.WriteLine("Shape(x, y, widt, height)");
+            Console.WriteLine("Shape(x, y, width, height)");
         }
 
         public Shape(int x, int y) : this(x, y, 0, 0)

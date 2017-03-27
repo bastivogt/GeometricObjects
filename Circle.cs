@@ -2,10 +2,39 @@ using System;
 
 namespace GeometricObjects
 {
+
     class Circle : Shape
     {
-        protected int _radius = 0;
-        public int Radius
+
+        public override int Width
+        {
+            get
+            {
+                return this._width;
+            }
+            set
+            {
+                this._width = value;
+                this._height = value;
+                this._radius = Convert.ToInt32(value / 2);
+            }
+        }
+
+        public override int Height
+        {
+            get
+            {
+                return this._width;
+            }
+            set
+            {
+                this._width = value;
+                this._height = value;
+                this._radius = Convert.ToInt32(value / 2);
+            }
+        }
+        protected int _radius;
+        public int Radius 
         {
             get
             {
@@ -14,36 +43,9 @@ namespace GeometricObjects
             set
             {
                 this._radius = value;
-                this.Width = value * 2;
-            }
-        }
-
-        public override int Width
-        {
-            get 
-            {
-                return this._width;
-            }
-            set
-            {
-                this._width = value;
-                this._height = value;
-                this.Radius = Convert.ToInt32(value / 2);
-            }
-        }
-
-
-        public override int Height 
-        {
-            get
-            {
-                return this._height;
-            }
-            set
-            {
-                this._height = value;
-                this._width = value;
-                this.Radius = Convert.ToInt32(value / 2);
+                this._width = value * 2;
+                this._height = value * 2;
+                
             }
         }
 
@@ -51,7 +53,7 @@ namespace GeometricObjects
         {
             this.Radius = radius;
         }
-        
+
         public Circle(int x, int y) : this(x, y, 1)
         {
 
@@ -63,15 +65,10 @@ namespace GeometricObjects
         }
 
 
-
-
-
-
         public override double GetArea()
         {
             return Math.Pow(this.Radius, 2) * Math.PI;
         }
-
 
         public override double GetSize()
         {
@@ -79,12 +76,10 @@ namespace GeometricObjects
         }
 
 
-
         public override string ToString()
         {
             return "Circle [X: " + this.X + ", Y: " + this.Y + ", Width: " + this.Width + ", Height: " + this.Height + ", Radius: " + this.Radius + "]";
         }
-
 
     }
 }

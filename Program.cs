@@ -11,6 +11,10 @@ namespace GeometricObjects
             objs[1] = new Square(20, 20);
             objs[2] = new Square();
 
+
+
+
+
             foreach(Rectangle o in objs)
             {
                 Console.WriteLine(o);
@@ -26,6 +30,19 @@ namespace GeometricObjects
             foreach(Square o in objs)
             {
                 Console.WriteLine(o);
+            }
+
+            Console.WriteLine("------------------------------------------------");
+
+            Circle[] circles = {
+                new Circle(10, 10, 30),
+                new Circle(12, 15),
+                new Circle()
+            };
+            
+            foreach(Circle c in circles)
+            {
+                Console.WriteLine(c);
             }
 
         }
