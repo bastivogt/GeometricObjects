@@ -19,7 +19,7 @@ namespace GeometricObjects
 
 
             Console.WriteLine(objs[0].ISBigger(objs[1]));
-            Console.WriteLine(Shape.ISBigger(objs[0], objs[1]));
+            Console.WriteLine(Square.ISBigger(objs[0], objs[1]));
 
             Console.WriteLine(Shape.Count);
 
