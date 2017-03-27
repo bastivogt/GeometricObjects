@@ -20,7 +20,7 @@ namespace GeometricObjects
 
             Console.WriteLine(objs[0].isBigger(objs[1]));
 
-            Console.WriteLine(Point.Count);
+            Console.WriteLine(Shape.Count);
 
             foreach(Rectangle o in objs)
             {

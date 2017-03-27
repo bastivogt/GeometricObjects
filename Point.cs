@@ -7,19 +7,11 @@ namespace GeometricObjects
         public int X {get; set;} = 0;
         public int Y {get; set;} = 0;
 
-        protected static int _count = 0;
-        public static int Count {
-            get
-            {
-                return _count;
-            }
-        }
 
         public Point(int x, int y)
         {
             this.X = x;
             this.Y = y;
-            _count += 1;
             Console.WriteLine("Point(x, y)");
         }
 

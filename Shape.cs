@@ -31,12 +31,21 @@ namespace GeometricObjects
             }
         }
 
+        protected static int _count = 0;
+        public static int Count {
+            get
+            {
+                return _count;
+            }
+        }
+
 
         // Constructors
         public Shape(int x, int y, int width, int height) : base(x, y)
         {
             this.Width = width;
             this.Height = height;
+            _count ++;
             Console.WriteLine("Shape(x, y, widt, height)");
         }
 
