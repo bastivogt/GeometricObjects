@@ -1,0 +1,8 @@
+/home/sebastian/dev/dotnet/GeometricObjects/bin/Debug/netcoreapp1.1/GeometricObjects.deps.json
+/home/sebastian/dev/dotnet/GeometricObjects/bin/Debug/netcoreapp1.1/GeometricObjects.runtimeconfig.json
+/home/sebastian/dev/dotnet/GeometricObjects/bin/Debug/netcoreapp1.1/GeometricObjects.runtimeconfig.dev.json
+/home/sebastian/dev/dotnet/GeometricObjects/bin/Debug/netcoreapp1.1/GeometricObjects.dll
+/home/sebastian/dev/dotnet/GeometricObjects/bin/Debug/netcoreapp1.1/GeometricObjects.pdb
+/home/sebastian/dev/dotnet/GeometricObjects/obj/Debug/netcoreapp1.1/GeometricObjects.AssemblyInfo.cs
+/home/sebastian/dev/dotnet/GeometricObjects/obj/Debug/netcoreapp1.1/GeometricObjects.dll
+/home/sebastian/dev/dotnet/GeometricObjects/obj/Debug/netcoreapp1.1/GeometricObjects.pdb
